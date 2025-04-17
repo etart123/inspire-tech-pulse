@@ -7,7 +7,7 @@ import { Separator } from './ui/separator';
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20">
+    <section id="contact" className="min-h-screen py-20">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
@@ -21,7 +21,7 @@ const Contact = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-12 items-start">
-          <div className="bg-white p-6 rounded-lg shadow-lg">
+          <div className="bg-white p-6 rounded-lg shadow-lg animate-fade-in">
             <h3 className="text-xl font-semibold mb-6">Send us a message</h3>
             <form className="space-y-6">
               <div>
@@ -47,7 +47,7 @@ const Contact = () => {
             </form>
           </div>
 
-          <div className="space-y-8">
+          <div className="space-y-8 animate-fade-in delay-100">
             <div>
               <h3 className="text-xl font-semibold mb-6">Contact Information</h3>
               <div className="space-y-4">
@@ -62,14 +62,14 @@ const Contact = () => {
                   <Phone className="w-5 h-5 text-ith-orange mt-1" />
                   <div>
                     <p className="font-medium">Phone</p>
-                    <p className="text-gray-600">+251 912 345 678</p>
+                    <p className="text-gray-600">+251977896783</p>
                   </div>
                 </div>
                 <div className="flex items-start space-x-4">
                   <Mail className="w-5 h-5 text-ith-orange mt-1" />
                   <div>
                     <p className="font-medium">Email</p>
-                    <p className="text-gray-600">contact@inspiretechhub.com</p>
+                    <p className="text-gray-600">sales@go-ith.com</p>
                   </div>
                 </div>
               </div>

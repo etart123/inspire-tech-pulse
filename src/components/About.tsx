@@ -1,10 +1,11 @@
 
 import { Award, BookOpen, Users } from 'lucide-react';
 import { Card, CardContent } from './ui/card';
+import { Separator } from './ui/separator';
 
 const About = () => {
   return (
-    <section id="about" className="py-20 bg-gray-50">
+    <section id="about" className="min-h-screen py-20 bg-gray-50">
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl font-bold mb-4">
@@ -17,8 +18,8 @@ const About = () => {
           </p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
-          <Card className="hover:shadow-lg transition-shadow">
+        <div className="grid md:grid-cols-3 gap-8 mb-16">
+          <Card className="hover:shadow-lg transition-shadow animate-fade-in">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
                 <div className="p-3 bg-ith-orange/10 rounded-full mb-4">
@@ -30,7 +31,7 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-shadow animate-fade-in delay-100">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
                 <div className="p-3 bg-ith-blue/10 rounded-full mb-4">
@@ -42,7 +43,7 @@ const About = () => {
             </CardContent>
           </Card>
 
-          <Card className="hover:shadow-lg transition-shadow">
+          <Card className="hover:shadow-lg transition-shadow animate-fade-in delay-200">
             <CardContent className="pt-6">
               <div className="flex flex-col items-center text-center">
                 <div className="p-3 bg-ith-orange/10 rounded-full mb-4">
@@ -53,6 +54,29 @@ const About = () => {
               </div>
             </CardContent>
           </Card>
+        </div>
+
+        <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 animate-fade-in delay-300">
+          <div className="text-center mb-8">
+            <h3 className="text-2xl font-bold mb-4">Message from Our CEO</h3>
+            <Separator className="max-w-[100px] mx-auto" />
+          </div>
+          <div className="flex flex-col md:flex-row items-center gap-8">
+            <div className="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-r from-ith-orange to-ith-blue flex-shrink-0">
+              <img
+                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3"
+                alt="CEO"
+                className="w-full h-full object-cover"
+              />
+            </div>
+            <div>
+              <p className="text-gray-600 italic mb-4">
+                "At Inspire Tech Hub, we believe in the power of technology to transform lives and communities. Our journey began with a vision to bridge the digital divide and create opportunities for young minds in Ethiopia. Today, we're proud to be at the forefront of digital innovation, empowering the next generation of tech leaders."
+              </p>
+              <p className="font-semibold">John Doe</p>
+              <p className="text-gray-500 text-sm">Founder & CEO</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
