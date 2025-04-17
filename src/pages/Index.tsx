@@ -1,4 +1,5 @@
 
+import React from 'react';
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
 import About from "@/components/About";
@@ -11,18 +12,31 @@ import ChatBot from "@/components/ChatBot";
 
 const Index = () => {
   return (
-    <main className="overflow-hidden">
+    <main className="overflow-x-hidden">
       <Navbar />
       <Hero />
-      <About />
-      <Services />
-      <Portfolio />
-      <FAQ />
-      <Contact />
-      <Footer />
+      <div className="scroll-trigger animate-scroll-fade">
+        <About />
+      </div>
+      <div className="scroll-trigger animate-scroll-fade delay-200">
+        <Services />
+      </div>
+      <div className="scroll-trigger animate-scroll-fade delay-300">
+        <Portfolio />
+      </div>
+      <div className="scroll-trigger animate-scroll-fade delay-400">
+        <FAQ />
+      </div>
+      <div className="scroll-trigger animate-scroll-fade delay-500">
+        <Contact />
+      </div>
+      <div className="scroll-trigger animate-scroll-fade delay-600">
+        <Footer />
+      </div>
       <ChatBot />
     </main>
   );
 };
 
 export default Index;
+

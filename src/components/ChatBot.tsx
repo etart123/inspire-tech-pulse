@@ -8,7 +8,7 @@ const ChatBot = () => {
   };
 
   return (
-    <div className="fixed bottom-6 right-6 z-50">
+    <div className="fixed bottom-6 right-6 z-50 animate-bounce">
       <Button
         onClick={handleChatClick}
         className="bg-ith-orange hover:bg-ith-blue transition-colors rounded-full p-4 shadow-lg"
@@ -20,3 +20,4 @@ const ChatBot = () => {
 };
 
 export default ChatBot;
+

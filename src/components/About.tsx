@@ -58,11 +58,11 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 animate-fade-in delay-300">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Message from Our CEO</h3>
+            <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
             <Separator className="max-w-[100px] mx-auto" />
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8">
-            <div className="w-32 h-32 rounded-full overflow-hidden bg-gradient-to-r from-ith-orange to-ith-blue flex-shrink-0">
+            <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-ith-orange flex-shrink-0">
               <img
                 src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3"
                 alt="CEO"
@@ -71,9 +71,9 @@ const About = () => {
             </div>
             <div>
               <p className="text-gray-600 italic mb-4">
-                "At Inspire Tech Hub, we believe in the power of technology to transform lives and communities. Our journey began with a vision to bridge the digital divide and create opportunities for young minds in Ethiopia. Today, we're proud to be at the forefront of digital innovation, empowering the next generation of tech leaders."
+                "At Inspire Tech Hub, we're not just teaching technology - we're cultivating a digital ecosystem that transforms potential into power. From our rural roots, we're building bridges of innovation that connect Ethiopia's young talent with global opportunities."
               </p>
-              <p className="font-semibold">John Doe</p>
+              <p className="font-semibold">Abebe Bekele</p>
               <p className="text-gray-500 text-sm">Founder & CEO</p>
             </div>
           </div>
@@ -84,3 +84,4 @@ const About = () => {
 };
 
 export default About;
+
