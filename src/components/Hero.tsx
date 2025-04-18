@@ -1,6 +1,6 @@
 
 import { Button } from './ui/button';
-import { ArrowRight, Monitor, Users, Globe, Mail } from 'lucide-react';
+import { ArrowRight, Monitor, Users, Globe } from 'lucide-react';
 import { useEffect, useState } from 'react';
 
 const Hero = () => {
@@ -18,7 +18,7 @@ const Hero = () => {
   }, [typedText]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-slate-900 via-[#1a2245] to-black">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-[#2e3a87] via-[#1a2245] to-[#fd7902]">
       {/* Background Animation */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -55,13 +55,16 @@ const Hero = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-400">
-              <Button className="bg-ith-orange hover:bg-ith-orange/90 transition-all px-8 py-6 text-lg group relative overflow-hidden shadow-lg shadow-ith-orange/20">
-                <span className="absolute inset-0 w-0 bg-white/20 transition-all duration-300 ease-out group-hover:w-full"></span>
-                <span className="relative">Get a Solution</span>
+              <Button 
+                onClick={() => window.open('https://affiliate.go-ith.com/', '_blank')}
+                className="bg-white text-ith-blue hover:bg-ith-orange hover:text-white transition-all px-8 py-6 text-lg group relative overflow-hidden shadow-lg shadow-white/20"
+              >
+                <span className="absolute inset-0 w-0 bg-ith-orange/20 transition-all duration-300 ease-out group-hover:w-full"></span>
+                <span className="relative">Join Our Affiliate Program</span>
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" className="border-ith-blue text-white hover:bg-ith-blue hover:text-white px-8 py-6 text-lg group transition-all duration-300 shadow-lg shadow-ith-blue/10">
-                <span className="relative">Join the Movement</span>
+              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-ith-blue px-8 py-6 text-lg group transition-all duration-300 shadow-lg">
+                <span className="relative">Get Started</span>
               </Button>
             </div>
 
