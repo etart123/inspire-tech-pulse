@@ -1,4 +1,3 @@
-
 import React, { useEffect } from 'react';
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/Hero";
@@ -9,6 +8,7 @@ import FAQ from "@/components/FAQ";
 import Contact from "@/components/Contact";
 import Footer from "@/components/Footer";
 import ChatBot from "@/components/ChatBot";
+import ImageProtection from "@/components/ImageProtection";
 
 const Index = () => {
   useEffect(() => {
@@ -34,6 +34,7 @@ const Index = () => {
 
   return (
     <main className="overflow-x-hidden">
+      <ImageProtection />
       <Navbar />
       <div className="scroll-trigger opacity-0">
         <Hero />

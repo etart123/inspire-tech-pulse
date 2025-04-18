@@ -1,5 +1,4 @@
-
-import { Facebook, Instagram, Linkedin, Twitter } from 'lucide-react';
+import { Facebook, Instagram, Linkedin, Telegram } from 'lucide-react';
 
 const Footer = () => {
   return (
@@ -24,17 +23,37 @@ const Footer = () => {
           <div>
             <h3 className="text-xl font-bold mb-4">Follow Us</h3>
             <div className="flex space-x-4">
-              <a href="#" className="hover:text-ith-orange transition-colors">
+              <a 
+                href="https://web.facebook.com/ith.dev.et" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-ith-orange transition-colors"
+              >
                 <Facebook className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-ith-orange transition-colors">
-                <Twitter className="h-6 w-6" />
-              </a>
-              <a href="#" className="hover:text-ith-orange transition-colors">
+              <a 
+                href="https://www.instagram.com/go_ith/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-ith-orange transition-colors"
+              >
                 <Instagram className="h-6 w-6" />
               </a>
-              <a href="#" className="hover:text-ith-orange transition-colors">
+              <a 
+                href="https://www.linkedin.com/company/inspire-tech-hub/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-ith-orange transition-colors"
+              >
                 <Linkedin className="h-6 w-6" />
+              </a>
+              <a 
+                href="https://t.me/InspireTech_Hub" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="hover:text-ith-orange transition-colors"
+              >
+                <Telegram className="h-6 w-6" />
               </a>
             </div>
           </div>
