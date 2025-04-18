@@ -11,19 +11,19 @@ import { Card, CardContent } from "./ui/card";
 const Portfolio = () => {
   const projects = [
     {
-      title: "E-Learning Platform",
-      description: "A comprehensive digital learning solution for remote education",
-      image: "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      title: "ITH Construction ERP",
+      description: "Comprehensive construction management solution for Ethiopian builders",
+      image: "/lovable-uploads/96e15f07-b1a3-4c24-b7b0-5769a053b9bc.png"
     },
     {
-      title: "Tech Community Hub",
-      description: "Digital platform connecting tech enthusiasts across Ethiopia",
-      image: "https://images.unsplash.com/photo-1522071820081-009f0129c71c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      title: "ITH HR Management",
+      description: "Advanced HR system tailored for Ethiopian businesses",
+      image: "/lovable-uploads/30bc2551-b5d8-446c-9358-bb2c2a45e1ee.png"
     },
     {
-      title: "Innovation Lab",
-      description: "Creative space for tech innovation and collaboration",
-      image: "https://images.unsplash.com/photo-1531482615713-2afd69097998?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80"
+      title: "ETH Gym Management",
+      description: "Modern fitness facility management system",
+      image: "/lovable-uploads/d8d5615e-597b-45b9-bad8-b436f476e0cd.png"
     }
   ];
 
@@ -37,7 +37,7 @@ const Portfolio = () => {
             </span>
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our innovative projects and solutions that make a difference.
+            Discover our innovative Ethiopian tech solutions
           </p>
         </div>
 
@@ -45,17 +45,17 @@ const Portfolio = () => {
           <Carousel className="w-full max-w-5xl mx-auto">
             <CarouselContent>
               {projects.map((project, index) => (
-                <CarouselItem key={index}>
+                <CarouselItem key={index} className="animate-slide-in-right" style={{ animationDelay: `${index * 200}ms` }}>
                   <Card className="border-0 shadow-none">
                     <CardContent className="p-0">
-                      <div className="relative aspect-video overflow-hidden rounded-xl">
+                      <div className="relative aspect-video overflow-hidden rounded-xl group">
                         <img
                           src={project.image}
                           alt={project.title}
-                          className="w-full h-full object-cover hover:scale-105 transition-transform duration-500"
+                          className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent flex items-end p-6">
-                          <div className="text-white">
+                          <div className="text-white transform transition-transform duration-500 translate-y-4 group-hover:translate-y-0">
                             <h3 className="text-xl font-bold mb-2">{project.title}</h3>
                             <p className="text-white/80">{project.description}</p>
                           </div>

@@ -1,4 +1,3 @@
-
 import { Button } from './ui/button';
 import { ArrowRight, Monitor, Users, Globe } from 'lucide-react';
 import { useEffect, useState } from 'react';
@@ -18,28 +17,7 @@ const Hero = () => {
   }, [typedText]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gray-50">
-      {/* Background Animation */}
-      <div className="absolute inset-0 opacity-10">
-        <div className="absolute top-0 left-0 w-full h-full">
-          {[...Array(20)].map((_, i) => (
-            <div
-              key={i}
-              className="absolute rounded-full"
-              style={{
-                width: `${Math.random() * 10 + 1}px`,
-                height: `${Math.random() * 10 + 1}px`,
-                top: `${Math.random() * 100}%`,
-                left: `${Math.random() * 100}%`,
-                backgroundColor: Math.random() > 0.5 ? '#fd7902' : '#2e3a87',
-                boxShadow: `0 0 ${Math.random() * 10 + 5}px ${Math.random() > 0.5 ? '#fd7902' : '#2e3a87'}`,
-                animation: `float ${Math.random() * 10 + 10}s linear infinite`
-              }}
-            />
-          ))}
-        </div>
-      </div>
-
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-white">
       <div className="container mx-auto px-4 z-10">
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left space-y-8">
@@ -87,28 +65,19 @@ const Hero = () => {
             </div>
           </div>
 
-          <div className="hidden md:block relative">
+          <div className="hidden md:block relative animate-slide-in-right">
             <div className="absolute inset-0 bg-gradient-to-r from-ith-orange/20 to-ith-blue/20 rounded-full filter blur-3xl animate-pulse"></div>
             <div className="relative">
               <div className="absolute -top-4 -left-4 w-24 h-24 bg-ith-orange/20 rounded-full animate-float delay-300"></div>
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-ith-blue/20 rounded-full animate-float"></div>
               
-              {/* Main Image */}
               <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 animate-float">
                 <img
-                  src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
-                  alt="Tech Innovation"
+                  src="/lovable-uploads/96e15f07-b1a3-4c24-b7b0-5769a053b9bc.png"
+                  alt="ITH Construction ERP Dashboard"
                   className="object-cover h-[600px] w-full transition-all duration-700 hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
-              </div>
-              
-              {/* Decorative Elements */}
-              <div className="absolute top-5 -right-5 bg-ith-orange/90 text-white p-4 rounded-lg shadow-lg transform rotate-3 z-10">
-                <p className="font-bold">Innovative Solutions</p>
-              </div>
-              <div className="absolute -bottom-5 -left-5 bg-ith-blue/90 text-white p-4 rounded-lg shadow-lg transform -rotate-3 z-10">
-                <p className="font-bold">Cutting-Edge Tech</p>
               </div>
             </div>
           </div>
