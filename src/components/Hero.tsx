@@ -18,7 +18,7 @@ const Hero = () => {
   }, [typedText]);
 
   return (
-    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gradient-to-br from-[#2e3a87] via-[#1a2245] to-[#fd7902]">
+    <section id="home" className="min-h-screen flex items-center relative overflow-hidden bg-gray-50">
       {/* Background Animation */}
       <div className="absolute inset-0 opacity-10">
         <div className="absolute top-0 left-0 w-full h-full">
@@ -44,11 +44,11 @@ const Hero = () => {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="text-center md:text-left space-y-8">
             <div className="space-y-4">
-              <h1 className="text-4xl md:text-6xl font-bold leading-tight">
-                <span className="text-white">{typedText}</span>
+              <h1 className="text-4xl md:text-6xl font-bold leading-tight text-gray-800">
+                <span>{typedText}</span>
                 <span className="animate-pulse">|</span>
               </h1>
-              <p className="text-gray-300 text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0 animate-fade-in delay-300">
+              <p className="text-gray-600 text-lg md:text-xl leading-relaxed max-w-lg mx-auto md:mx-0 animate-fade-in delay-300">
                 We don't just build tech — we craft digital revolutions. 
                 <span className="block mt-2">Inspire Tech Hub is where thinkers, creators, and coders collide.</span>
               </p>
@@ -57,32 +57,32 @@ const Hero = () => {
             <div className="flex flex-col sm:flex-row gap-4 justify-center md:justify-start animate-fade-in delay-400">
               <Button 
                 onClick={() => window.open('https://affiliate.go-ith.com/', '_blank')}
-                className="bg-white text-ith-blue hover:bg-ith-orange hover:text-white transition-all px-8 py-6 text-lg group relative overflow-hidden shadow-lg shadow-white/20"
+                className="bg-ith-orange text-white hover:bg-ith-orange/90 transition-all px-8 py-6 text-lg group relative overflow-hidden shadow-lg shadow-ith-orange/20"
               >
-                <span className="absolute inset-0 w-0 bg-ith-orange/20 transition-all duration-300 ease-out group-hover:w-full"></span>
+                <span className="absolute inset-0 w-0 bg-white/20 transition-all duration-300 ease-out group-hover:w-full"></span>
                 <span className="relative">Join Our Affiliate Program</span>
                 <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
               </Button>
-              <Button variant="outline" className="border-white text-white hover:bg-white hover:text-ith-blue px-8 py-6 text-lg group transition-all duration-300 shadow-lg">
+              <Button variant="outline" className="border-ith-blue text-ith-blue hover:bg-ith-blue hover:text-white px-8 py-6 text-lg group transition-all duration-300 shadow-lg">
                 <span className="relative">Get Started</span>
               </Button>
             </div>
 
             <div className="grid grid-cols-3 gap-4 pt-8 animate-fade-in delay-500">
-              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/5">
+              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/80 hover:shadow-md">
                 <Monitor className="w-8 h-8 mx-auto text-ith-orange mb-2" />
-                <h4 className="font-semibold text-white">Modern Tech</h4>
-                <p className="text-sm text-gray-300">Latest Solutions</p>
+                <h4 className="font-semibold text-gray-800">Modern Tech</h4>
+                <p className="text-sm text-gray-600">Latest Solutions</p>
               </div>
-              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/5">
+              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/80 hover:shadow-md">
                 <Users className="w-8 h-8 mx-auto text-ith-blue mb-2" />
-                <h4 className="font-semibold text-white">Expert Team</h4>
-                <p className="text-sm text-gray-300">Skilled Developers</p>
+                <h4 className="font-semibold text-gray-800">Expert Team</h4>
+                <p className="text-sm text-gray-600">Skilled Developers</p>
               </div>
-              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/5">
+              <div className="text-center p-4 rounded-lg transition-all duration-300 hover:bg-white/80 hover:shadow-md">
                 <Globe className="w-8 h-8 mx-auto text-ith-orange mb-2" />
-                <h4 className="font-semibold text-white">Global Reach</h4>
-                <p className="text-sm text-gray-300">Worldwide Impact</p>
+                <h4 className="font-semibold text-gray-800">Global Reach</h4>
+                <p className="text-sm text-gray-600">Worldwide Impact</p>
               </div>
             </div>
           </div>
@@ -94,13 +94,13 @@ const Hero = () => {
               <div className="absolute -bottom-4 -right-4 w-32 h-32 bg-ith-blue/20 rounded-full animate-float"></div>
               
               {/* Main Image */}
-              <div className="rounded-2xl shadow-2xl overflow-hidden border border-white/10 animate-float">
+              <div className="rounded-2xl shadow-2xl overflow-hidden border border-gray-200 animate-float">
                 <img
                   src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?auto=format&fit=crop&w=800&q=80"
                   alt="Tech Innovation"
                   className="object-cover h-[600px] w-full transition-all duration-700 hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-transparent to-transparent"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
               </div>
               
               {/* Decorative Elements */}

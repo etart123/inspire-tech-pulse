@@ -1,3 +1,4 @@
+
 import type { Config } from "tailwindcss"
 import { fontFamily } from "tailwindcss/defaultTheme"
 import animatePlugin from "tailwindcss-animate"
@@ -80,7 +81,7 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
         float: 'float 6s ease-in-out infinite',
-        "scroll-fade": "scroll-fade-in 0.8s ease-out"
+        "scroll-fade": "scroll-fade-in 0.8s ease-out forwards"
       },
     },
   },

@@ -58,23 +58,26 @@ const About = () => {
 
         <div className="max-w-4xl mx-auto bg-white rounded-xl shadow-lg p-8 animate-fade-in delay-300">
           <div className="text-center mb-8">
-            <h3 className="text-2xl font-bold mb-4">Our Vision</h3>
+            <h3 className="text-2xl font-bold mb-4">A Vision for Impact</h3>
             <Separator className="max-w-[100px] mx-auto" />
           </div>
           <div className="flex flex-col md:flex-row items-center gap-8">
             <div className="w-32 h-32 rounded-full overflow-hidden border-4 border-ith-orange flex-shrink-0">
               <img
-                src="https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3"
-                alt="CEO"
+                src="/lovable-uploads/8b718b0b-6c58-4d22-9d52-5acbdce2bf29.png"
+                alt="Eyob Ayalew"
                 className="w-full h-full object-cover"
               />
             </div>
             <div>
               <p className="text-gray-600 italic mb-4">
-                "At Inspire Tech Hub, we're not just teaching technology - we're cultivating a digital ecosystem that transforms potential into power. From our rural roots, we're building bridges of innovation that connect Ethiopia's young talent with global opportunities."
+                "Some journeys aren't made in the spotlight — they're forged in silence, far from the noise. Inspire Tech Hub was never about being seen. It was about building something that matters, even if no one knows the face behind it. I've learned that the greatest innovation comes from constraint. That real impact doesn't need fame — just focus. Inspire Tech Hub is the result of that mindset: a platform built to empower, uplift, and create — quietly but relentlessly."
               </p>
-              <p className="font-semibold">Abebe Bekele</p>
+              <p className="font-semibold">Eyob Ayalew</p>
               <p className="text-gray-500 text-sm">Founder & CEO</p>
+              <div className="mt-3 py-2 px-4 bg-ith-orange/10 border-l-2 border-ith-orange rounded">
+                <p className="text-ith-blue font-medium">Tech for those who were never meant to be left behind.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -84,4 +87,3 @@ const About = () => {
 };
 
 export default About;
-

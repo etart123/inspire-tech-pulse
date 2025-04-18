@@ -20,8 +20,12 @@ const Navbar = () => {
     { name: 'About', href: '#about' },
     { name: 'Services', href: '#services' },
     { name: 'Portfolio', href: '#portfolio' },
-    { name: 'Contact', href: '#contact' },
   ];
+
+  const scrollToContact = () => {
+    document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    setIsOpen(false);
+  };
 
   return (
     <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white/90 backdrop-blur-md shadow-md' : 'bg-transparent'}`}>
@@ -42,8 +46,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="bg-ith-orange hover:bg-ith-blue transition-colors">
-              Get Started
+            <Button 
+              className="bg-ith-orange hover:bg-ith-blue transition-colors"
+              onClick={scrollToContact}
+            >
+              Contact Us
             </Button>
           </div>
 
@@ -69,8 +76,11 @@ const Navbar = () => {
                 {link.name}
               </a>
             ))}
-            <Button className="w-full mt-4 bg-ith-orange hover:bg-ith-blue transition-colors">
-              Get Started
+            <Button 
+              className="w-full mt-4 bg-ith-orange hover:bg-ith-blue transition-colors"
+              onClick={scrollToContact}
+            >
+              Contact Us
             </Button>
           </div>
         )}
